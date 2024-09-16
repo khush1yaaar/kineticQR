@@ -70,5 +70,3 @@ Feel free to submit issues or pull requests. For detailed contribution guideline
 This project is licensed under the MIT License.
 
 ---
-
-This README now highlights the bonus features and should make your project stand out even more!
