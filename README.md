@@ -1,16 +1,71 @@
-# kineticqr
+Here’s a brief `README.md` for your app:
 
-A new Flutter project.
+---
+
+# KineticQR
+
+KineticQR is a Flutter application that allows users to scan and generate QR codes. It features a clean and intuitive interface with theme toggling for light and dark modes.
+
+## Features
+
+- **Scan QR Code**: Use the device camera to scan QR codes and display their content.
+- **Generate QR Code**: Input text to generate a QR code that can be shared or saved.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/khush1yaaar/kineticQR.git
+   cd kineticqr
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. Configure Android permissions:
+   - Ensure that `CAMERA` and `FLASHLIGHT` permissions are set in `AndroidManifest.xml`.
+
+4. Run the app:
+
+   ```bash
+   flutter run
+   ```
+
+## Code Structure
+
+- **`main.dart`**: Entry point of the application.
+- **`lib/screens/`**: Contains the main screens of the app:
+  - **`scan_qr_code.dart`**: Screen for scanning QR codes.
+  - **`generate_qr_code.dart`**: Screen for generating QR codes.
+  - **`generated_qr.dart`**: Screen displaying the generated QR code.
+- **`lib/theme/`**: Contains theme-related files for managing light and dark modes.
+- **`pubspec.yaml`**: Manages dependencies and project metadata.
+
+## Code Comments
+
+- **`scan_qr_code.dart`**: Contains logic for scanning QR codes and handling detected barcodes. Includes functionality to navigate to URLs if detected.
+- **`generate_qr_code.dart`**: Handles text input and generates QR codes. Includes input validation and error handling.
+- **`generated_qr.dart`**: Displays the generated QR code with styling and alignment.
+
+## Contributions
+
+Feel free to submit issues or pull requests. For detailed contribution guidelines, please refer to the project's CONTRIBUTING.md file.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to adjust any sections as needed!
