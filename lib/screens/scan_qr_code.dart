@@ -71,7 +71,7 @@ class _ScanQrCodeState extends State<ScanQrCode> {
                         print('Found a Barcode!! ${barcodes.first.rawValue}');
                       }
                     },
-                    child: Text('${barcodes.first.rawValue} click to open in browser' ?? ""),
+                    child: Text('${barcodes.first.rawValue} click to open in browser'),
                   ),
                   content: GestureDetector(
                     onTap: () {
